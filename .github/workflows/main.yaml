@@ -21,6 +21,16 @@ jobs:
       - name: Checkar in på den aktuella branschen och repon
         uses: actions/checkout@v2
 
+      - name: Sätt versions-variabeln
+        run: echo "RELEASE_VERSIONEN=$(echo ${GIT_MESSAGE} | grep -Po '(?<=--v:)[^;]+')" >> $GITHUB_ENV
+        env:
+          GIT_MESSAGE: ${{github.event.head_commit.message}}
+
+      - name: Test
+        run: |
+          echo $RELEASE_VERSIONEN
+          echo $RELEASE_VERSIONEN
+
       # Använder tillfälligt dotnet-miljön
       - name: Setup Dotnet Env
         uses: actions/setup-dotnet@v1
