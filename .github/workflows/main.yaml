@@ -62,7 +62,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: valient/cloudness$RELEASE_VERSION
+          tags: valient/cloudness:v$RELEASE_VERSION
 
       # - name: Building the Docker Image och skickar den till Docker Hub
       #   uses: docker/build-push-action@v2.9.0
@@ -80,7 +80,7 @@ jobs:
         uses: "kota65535/github-openvpn-connect-action@v1"
         with:
           config_file: ./.github/vpn/config.ovpn
-          username:  ${{ secrets.VPN_USERNAME}}
+          username: ${{ secrets.VPN_USERNAME}}
           password: ${{ secrets.VPN_PASSWORD}}
           client_key: ${{ secrets.OPEN_VPN_KEY}}
 
