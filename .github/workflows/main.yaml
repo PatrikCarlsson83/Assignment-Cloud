@@ -51,10 +51,10 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Building the Docker Image
-        run: docker build -t valient/cloudness:$VERSION_CONTROL .
+        run: docker build -t valient/assignment:$VERSION_CONTROL .
 
       - name: Pushing the Docker Image
-        run: docker push valient/cloudness:latest
+        run: docker push valient/assignment:$VERSION_CONTROL
 
       - name: Install Open VPN
         run: |
