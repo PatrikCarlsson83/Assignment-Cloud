@@ -22,14 +22,9 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Save release version
-        run: echo "RELEASE_VERSION=$(echo ${GIT_MESSAGE} | grep -Po '(?<=--v:)[^;]+')" >> $GITHUB_ENV
+        run: echo "VERSION-CONTROL=$(echo ${GIT_MESSAGE} | grep -Po '(?<=--v:)[^;]+')" >> $GITHUB_ENV
         env:
           GIT_MESSAGE: ${{github.event.head_commit.message}}
-
-      - name: Test
-        run: |
-          echo $RELEASE_VERSION
-          echo $RELEASE_VERSION
 
       # Använder tillfälligt dotnet-miljön
       - name: Setup Dotnet Env
@@ -46,9 +41,6 @@ jobs:
       - name: Genomför unit-tester
         run: dotnet test --no-build
 
-      # - name: Set up QEMU
-      #   uses: docker/setup-qemu-action@v1
-
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
 
@@ -59,22 +51,10 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Building the Docker Image
-        run: docker build -t valient/cloudness:$RELEASE_VERSION .
+        run: docker build -t valient/assignment:$VERSION-CONTROL .
 
       - name: Pushing the Docker Image
-        run: docker push valient/cloudness:$RELEASE_VERSION
-
-      # - name: Build and push
-      #   uses: docker/build-push-action@v2
-      #   with:
-      #     push: true
-      #     tags: valient/cloudness:v$RELEASE_VERSION
-
-      # - name: Building the Docker Image och skickar den till Docker Hub
-      #   uses: docker/build-push-action@v2.9.0
-      #   with:
-      #     push: true
-      #     tags: valient/assignment:$RELEASE_VERSION
+        run: docker push valient/assignment
 
       - name: Install Open VPN
         run: |
