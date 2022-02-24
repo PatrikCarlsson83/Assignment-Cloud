@@ -69,17 +69,17 @@ jobs:
         uses: "kota65535/github-openvpn-connect-action@v1"
         with:
           config_file: ./.github/vpn/config.ovpn
-          username:  ${{ secrets.OVPN_USERNAME}}
-          password: ${{ secrets.OVPN_PASSWORD}}
+          username:  ${{ secrets.VPN_USERNAME}}
+          password: ${{ secrets.VPN_PASSWORD}}
           client_key: ${{ secrets.OPEN_VPN_KEY}}
 
       - name: executing remote ssh commands using ssh key
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.KEY }}
-          port: ${{ secrets.PORT }}
+          host: ${{ secrets.VPN_HOST }}
+          username: ${{ secrets.VPN_USERNAME }}
+          key: ${{ secrets.VPN_SSH_KEY }}
+          port: ${{ secrets.VPN_PORT }}
           script: kubectl rollout restart deployment app
 
       - name: Check Connect VPN
