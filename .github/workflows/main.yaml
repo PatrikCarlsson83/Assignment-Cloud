@@ -64,11 +64,13 @@ jobs:
       #     push: true
       #     tags: valient/assignment:$RELEASE_VERSION
 
-      - name: Building the Docker Image och skickar den till Docker Hub
-        uses: docker/build-push-action@v2.9.0
+      - name: Test
         run: |
           echo $RELEASE_VERSION
           echo $RELEASE_VERSION
+
+      - name: Building the Docker Image och skickar den till Docker Hub
+        uses: docker/build-push-action@v2.9.0
         with:
           push: true
           tags: valient/assignment:$RELEASE_VERSION
