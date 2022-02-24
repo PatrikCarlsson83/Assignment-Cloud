@@ -27,7 +27,9 @@ jobs:
           GIT_MESSAGE: ${{github.event.head_commit.message}}
 
       - name: Test
-        run: echo $RELEASE_VERSION
+        run: |
+          echo $RELEASE_VERSION
+          echo $RELEASE_VERSION
 
       # Använder tillfälligt dotnet-miljön
       - name: Setup Dotnet Env
