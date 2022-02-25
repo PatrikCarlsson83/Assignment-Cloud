@@ -63,6 +63,9 @@ jobs:
           password: ${{ secrets.VPN_PASSWORD}}
           client_key: ${{ secrets.OPEN_VPN_KEY}}
 
+      - name: Check Connect VPN
+        run: echo ${{ steps.connect_vpn.outputs.STATUS }}
+
       - name: executing remote ssh commands using ssh key
         uses: appleboy/ssh-action@master
         with:
@@ -71,9 +74,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.PORT }}
           script: kubectl rollout restart deployment cloud
-
-      - name: Check Connect VPN
-        run: echo ${{ steps.connect_vpn.outputs.STATUS }}
+      
       - name: kill vpn
         if: always()
         run: sudo killall openvpn
