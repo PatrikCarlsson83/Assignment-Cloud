@@ -47,7 +47,7 @@ jobs:
         run: docker build -t valient/assignment:$VERSION_CONTROL -t valient/assignment:latest . 
 
       - name: Pushing the Docker Image
-        run: docker push -a valient/assignment
+        run: docker push valient/assignment
 
       - name: Install Open VPN
         run: |
