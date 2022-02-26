@@ -8,37 +8,37 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Assignment_Cloud
 build_property.RootNamespace = Assignment_Cloud
-build_property.ProjectDir = C:\Users\Patrik Carlsson\Desktop\Skola\Molntjänster\Assignment-Cloud\Assignment-Cloud\
+build_property.ProjectDir = c:\Users\Patrik Carlsson\Desktop\Skola\Molntjänster\Assignment-Cloud\Assignment-Cloud\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Patrik Carlsson\Desktop\Skola\Molntjänster\Assignment-Cloud\Assignment-Cloud
+build_property.MSBuildProjectDirectory = c:\Users\Patrik Carlsson\Desktop\Skola\Molntjänster\Assignment-Cloud\Assignment-Cloud
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Patrik Carlsson/Desktop/Skola/Molntjänster/Assignment-Cloud/Assignment-Cloud/Pages/Error.cshtml]
+[c:/Users/Patrik Carlsson/Desktop/Skola/Molntjänster/Assignment-Cloud/Assignment-Cloud/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Patrik Carlsson/Desktop/Skola/Molntjänster/Assignment-Cloud/Assignment-Cloud/Pages/Index.cshtml]
+[c:/Users/Patrik Carlsson/Desktop/Skola/Molntjänster/Assignment-Cloud/Assignment-Cloud/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Patrik Carlsson/Desktop/Skola/Molntjänster/Assignment-Cloud/Assignment-Cloud/Pages/Privacy.cshtml]
+[c:/Users/Patrik Carlsson/Desktop/Skola/Molntjänster/Assignment-Cloud/Assignment-Cloud/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Patrik Carlsson/Desktop/Skola/Molntjänster/Assignment-Cloud/Assignment-Cloud/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/Patrik Carlsson/Desktop/Skola/Molntjänster/Assignment-Cloud/Assignment-Cloud/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Patrik Carlsson/Desktop/Skola/Molntjänster/Assignment-Cloud/Assignment-Cloud/Pages/_ViewImports.cshtml]
+[c:/Users/Patrik Carlsson/Desktop/Skola/Molntjänster/Assignment-Cloud/Assignment-Cloud/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Patrik Carlsson/Desktop/Skola/Molntjänster/Assignment-Cloud/Assignment-Cloud/Pages/_ViewStart.cshtml]
+[c:/Users/Patrik Carlsson/Desktop/Skola/Molntjänster/Assignment-Cloud/Assignment-Cloud/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Patrik Carlsson/Desktop/Skola/Molntjänster/Assignment-Cloud/Assignment-Cloud/Pages/Shared/_Layout.cshtml]
+[c:/Users/Patrik Carlsson/Desktop/Skola/Molntjänster/Assignment-Cloud/Assignment-Cloud/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-fbu9t7f96a
