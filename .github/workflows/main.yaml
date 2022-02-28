@@ -43,10 +43,10 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Building the Docker Image
+      - name: Build Docker Image
         run: docker build -t valient/assignment:$VERSION_CONTROL -t valient/assignment:latest . 
 
-      - name: Pushing the Docker Image
+      - name: Push Docker Image
         run: docker push -a valient/assignment
 
       - name: Install Open VPN
