@@ -74,8 +74,9 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.PORT }}
           script: |
-            kubectl rollout restart deployment cloud
-            cat min-deployment.yaml
+            # kubectl rollout restart deployment cloud
+            # cat min-deployment.yaml
+            whoami
       
       - name: kill vpn
         if: always()
