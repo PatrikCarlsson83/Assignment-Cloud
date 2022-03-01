@@ -75,7 +75,7 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             kubectl rollout restart deployment cloud
-            #cat min-deployment.yaml
+            cat min-deployment.yaml
       
       - name: kill vpn
         if: always()
